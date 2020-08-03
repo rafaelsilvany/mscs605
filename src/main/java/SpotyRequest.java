@@ -14,7 +14,8 @@ public class SpotyRequest {
         parameters.put("time_range", "medium_term");
         parameters.put("limit", "10");
         parameters.put("offset", "5");
-        String auth_token = "BQB68ue2EE9uzyg2tKZqTZ4A8WdOBt99ZuZLsvtJAA3qKreZYaS3ehLBTdmNggmWXK4QGnbraar6ytCU5zkLWPVlY3Y2I6HEqq2WqHhe6SrG7yHc-agsKQ8kKXRyjNV77dAjws_T-2BhsAKwwaDyDPIatjoDDHpZ5ox1IcyOSoWIQH6evo-xK4rs8MUiHv0jwObfeX5RSjXAjGQCFQJG5iMAq5QCmJUmhE7tP3EqKe2Ms9HXxJmwsDlgg2jrakR5YO5TVQxkW3L5jrrN";
+        // add your token here
+        String auth_token = "";
         String url_link = "https://api.spotify.com/v1/me/top/artists?" + ParameterStringBuilder.getParamsString(parameters);
 
         URL url = new URL(url_link);
