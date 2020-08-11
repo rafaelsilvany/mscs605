@@ -28,6 +28,8 @@ public class SpotifyTopRequest{
         parameters.put("time_range", time_range);
         parameters.put("limit", limit);
         parameters.put("offset", offset);
+        
+ 
 
         try {
             // object initialization
@@ -47,7 +49,6 @@ public class SpotifyTopRequest{
 
             while ((inputLine = in.readLine()) != null) {
                 response.append(inputLine);
-                System.out.println(inputLine);
             }
             in.close();
             return response.toString();
